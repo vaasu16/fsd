@@ -2,15 +2,14 @@ import React from 'react'
 import "./Header.css";
 
 
-function Header() {
+function Header(a) {
   return (
     <>
-    <div className="head">Header</div>
+    <h1>{a.title}</h1>
     <nav className="navbar">
         <a href='#'>home </a>
         <a href='#'> login  </a>
         <a href='#'>contact us </a>
-        
     </nav>
     </>
   )
