@@ -2,10 +2,13 @@ import React from 'react'
 import "./Header.css";
 
 
-function Header(a) {
+function Header({title,color,card}) {
   return (
     <>
-    <h1>{a.title}</h1>
+    <h1>{title}</h1>
+    <h2>{color}</h2>
+    {card}
+
     <nav className="navbar">
         <a href='#'>home </a>
         <a href='#'> login  </a>

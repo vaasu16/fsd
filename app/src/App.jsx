@@ -9,10 +9,16 @@ function App() {
   const c={name: "KIET",location: "Ghaziabad",EST_year: 1998}
   return (
    <>
-    <Header title="my first react app"/>    
+    <Header title="my first react app" color="red"/>
+    {/* <Header color="red"/>   */}
+
+    <card>
+      <h4> this is children demo</h4>
+      <p>this demo talks about passing children prop</p>
+    </card>
     <Registration/>
     <h2>vg</h2>
-    <Footer year={y} company={c.name}/>
+    <Footer year={y} company={c}/>
    </>
   )
 }
